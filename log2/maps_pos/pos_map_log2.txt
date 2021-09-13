@@ -1,0 +1,91 @@
+1:pos:(0, 1)
+map:
+[True, True, True, True]
+[True, True, True, True]
+[True, True, True, True]
+[True, True, True, True]
+Acts:[0, 0.5, 0.5, 0]
+act:2
+sns:
+[True, True, True]
+[True, True, True]
+[True, True, True]
+
+2:pos:(0, 2)
+map:
+[True, True, True, True]
+[True, True, True, True]
+[True, True, True, True]
+[True, True, True, True]
+Acts:[0, 0.5, 0.5, 0]
+act:2
+sns:
+[True, True, True]
+[True, True, True]
+[True, True, True]
+
+3:pos:(1, 2)
+map:
+[True, True, True, True]
+[True, True, True, True]
+[True, True, True, True]
+[True, True, True, True]
+Acts:[0, 1.0, 0, 0]
+act:1
+sns:
+[True, True, True]
+[True, True, True]
+[True, True, True]
+
+4:pos:(1, 3)
+map:
+[True, True, True, True]
+[True, True, True, True]
+[True, False, False, True]
+[True, True, True, True]
+Acts:[0, 0, 1.0, 0]
+act:2
+sns:
+[True, True, True]
+[True, True, True]
+[False, False, True]
+
+5:pos:(2, 3)
+map:
+[True, True, True, True]
+[True, True, True, True]
+[True, False, False, True]
+[True, True, True, True]
+Acts:[0, 1.0, 0, 0]
+act:1
+sns:
+[True, True, True]
+[True, True, True]
+[False, True, True]
+
+6:pos:(3, 3)
+map:
+[True, True, True, True]
+[True, True, True, True]
+[True, False, False, True]
+[True, True, True, True]
+Acts:[0, 1.0, 0, 0]
+act:1
+sns:
+[True, True, True]
+[False, True, True]
+[True, True, True]
+
+7:pos:(3, 2)
+map:
+[True, True, True, True]
+[True, True, True, True]
+[True, False, False, True]
+[True, True, True, True]
+Acts:[1.0, 0, 0, 0]
+act:0
+sns:
+[False, True, True]
+[True, True, True]
+[True, True, True]
+
