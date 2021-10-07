@@ -18,7 +18,11 @@ rws=len(mp)
 cls=len(mp[0])
 bpy.ops.mesh.primitive_plane_add(size=1, enter_editmode=False, align='WORLD', location=((rws-1)/2, (cls-1)/2, 0),rotation=(0,0,0), scale=(4, 4, 1))
 fl_nm=bpy.context.active_object.name
+mat = bpy.data.materials.new(name="floor_P_BSDF")
+mat.diffuse_color=(0,1,0,1)
 bpy.data.objects[fl_nm].data.materials.append(bpy.data.materials['floor_P_BSDF'])
+mat = bpy.data.materials.new(name="cubes_P_BSDF")
+mat.diffuse_color=(0,0,1,1)
 bpy.ops.transform.resize(value=(rws,cls , 1), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(True, True, False), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False)
 #adding ligth source
 ##finding height
@@ -34,6 +38,8 @@ for ni,i in enumerate(mp):
             bpy.data.objects[cub_nm].data.materials.append(bpy.data.materials['cubes_P_BSDF'])
 bpy.ops.mesh.primitive_ico_sphere_add(radius=0.5,subdivisions=4, enter_editmode=False, align='WORLD', location=(st[0], st[1], 0.5), scale=(1, 1, 1))
 ag=bpy.context.active_object.name
+mat = bpy.data.materials.new(name="agent_mat")
+mat.diffuse_color=(1,0,0,1)
 bpy.data.objects[ag].data.materials.append(bpy.data.materials['agent_mat'])
 bpy.context.scene.frame_set(1)
 bpy.ops.anim.keyframe_insert_menu(type='Location')
