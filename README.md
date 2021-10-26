@@ -23,3 +23,4 @@ This folder contains the log files for running short_path_finder.py.
 This folder contains the log files for running maze_solver.py.  
 **visualization**  
 This folder contains a blender file and a python script. The blender file ruin the python script to generate a scene that replicates the agents perfomance. The agents perfomance is recorded in a pickle file. The pickle file is in the log2\maps_pos folder.  
+![Alt text](visualization/log4.png?raw=true "Visualization example")
