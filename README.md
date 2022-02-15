@@ -4,12 +4,12 @@ An agent is dropped in a finite 2d discrete world. It is given a goal position. 
 ## Approach
 First the agent assumes the entire world is void of any blocked spots. At the start of each move step the agent scans the environment and updates it's map of the world. With this map it finds the optimal path to the goal. The optimal path is found using policy iteration. It moves forward using this optimal path.
 The summarised form of the algorith is:
-  agent's map<-intialized to be fully free
-  iterate till goal reached
-    scan environment
-    update map
-    find optimal path/policy with respect to agent's map
-    follow optimal path/policy
+>  agent's map<-intialized to be fully free\
+>  iterate till goal reached
+>>    scan environment\
+>>    update map\
+>>    find optimal path/policy with respect to agent's map\
+>>    follow optimal path/policy
 ## Part's of the project
 **maze_bot.py**  
 This is the python script that runs the main concept of the code.  
